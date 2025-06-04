@@ -30,7 +30,7 @@
             <version>3.1.0</version>
             <configuration>
                 <!-- hier die Main-Methode setzen -->
-                <mainClass>fhwedel.JDBC.Hello</mainClass> 
+                <mainClass>fhwedel.JDBC.JDBC</mainClass> 
             </configuration>
         </plugin>
     </plugins>
