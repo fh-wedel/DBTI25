@@ -9,5 +9,3 @@ In diesem Repository finden sich die Übungen zu Vorlesung Datenbanktheorie und 
       - `mvn compile` übersetzt Projekt
       - `mvn exec:java` führt Projekt aus (main-Methode, wie in pom.cml angegeben)
 
-
-Test TEst
