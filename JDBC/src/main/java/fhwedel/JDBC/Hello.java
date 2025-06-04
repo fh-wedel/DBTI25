@@ -83,4 +83,14 @@ public class Hello {
         } 
     }
 
+    public static void createNewSchema(Connection con){
+         try {
+            Statement statement = con.createStatement();  
+            statement.executeQuery("CREATE TABLE krankenversicherung (kkid int NOT NULL,kuerzel varchar(255) NOT NULL, name varchar(255) NOT NULL, PRIMARY KEY (kkid));");
+        } catch (Exception e) {
+            System.err.println(e);
+            System.err.println("Fehler bei Schema-Migration!");
+        } 
+    }
+
 }
