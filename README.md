@@ -9,8 +9,6 @@ In diesem Repository finden sich die Übungen zu Vorlesung Datenbanktheorie und 
       - `mvn compile` übersetzt Projekt
       - `mvn exec:java` führt Projekt aus (main-Methode, wie in pom.cml angegeben)
 
-2. MongoDB: Aufgabenstellung zum Ansprechen von MongoDB
-   - Verwendung von Maven (im Verzeichnis Mongo) wie oben beschrieben.
 
 3. Data-Warehouse und Stern-Schema
    - Mongo Shell und Java, wie in der JDBC-Umgebung

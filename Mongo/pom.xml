@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fhwedel.Mongo</groupId>
-    <artifactId>MongoCRUDclient</artifactId>
+    <artifactId>MongoCRUDClient</artifactId>
     <version>1.0.0</version>
 
     <properties>
@@ -15,31 +15,32 @@
     </properties>
 
     <dependencies>
+        <!-- MongoDB Java Driver (synchroner Treiber) -->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-sync</artifactId>
+            <version>4.11.1</version>
+        </dependency>
+
+        <!-- Optional: MariaDB, falls du sie weiterhin brauchst -->
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
             <version>3.1.4</version>
         </dependency>
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongodb-driver-sync</artifactId>
-            <version>4.11.1</version> <!-- Check for latest version -->
-        </dependency>
     </dependencies>
 
     <build>
-    <plugins>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>exec-maven-plugin</artifactId>
-            <version>3.1.0</version>
-            <configuration>
-                <!-- hier die Main-Methode setzen -->
-                <mainClass>fhwedel.Mongo.CRUDclient</mainClass> 
-            </configuration>
-        </plugin>
-    </plugins>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>fhwedel.Mongo.CRUDClient</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
-
 
 </project>
